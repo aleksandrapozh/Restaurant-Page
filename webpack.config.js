@@ -18,4 +18,12 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.m?js$/,
+        type: "javascript/auto", 
+      },
+    ],
+  },
 };
