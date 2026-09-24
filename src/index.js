@@ -1,28 +1,27 @@
-import { loadHome } from "./home.js";
-import { loadMenu } from "./menu.js";
-import { loadAbout } from "./about.js";
-
+import { loadHome } from './home.js';
+import { loadMenu } from './menu.js';
+import { loadAbout } from './about.js';
 
 function clearContent() {
-  const content = document.getElementById("content");
-  content.innerHTML = "";
+  const content = document.getElementById('content');
+  content.innerHTML = '';
 }
 
-const homeBtn = document.getElementById("home-btn");
-const menuBtn = document.getElementById("menu-btn");
-const aboutBtn = document.getElementById("about-btn");
+const homeBtn = document.getElementById('home-btn');
+const menuBtn = document.getElementById('menu-btn');
+const aboutBtn = document.getElementById('about-btn');
 
-homeBtn.addEventListener("click", () => {
+homeBtn.addEventListener('click', () => {
   clearContent();
   loadHome();
 });
 
-menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener('click', () => {
   clearContent();
   loadMenu();
 });
 
-aboutBtn.addEventListener("click", () => {
+aboutBtn.addEventListener('click', () => {
   clearContent();
   loadAbout();
 });
